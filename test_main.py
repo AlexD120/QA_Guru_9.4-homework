@@ -14,6 +14,7 @@ def test_greeting():
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
+
 def test_rectangle():
     """
     Напишите программу, которая берет длину и ширину прямоугольника
@@ -30,6 +31,7 @@ def test_rectangle():
     area = a * b
     assert area == 200
 
+
 def test_circle():
     """
     Напишите программу, которая берет радиус круга и выводит на экран его длину и площадь.
@@ -45,6 +47,7 @@ def test_circle():
     length = 2 * math.pi * r
     assert length == 144.51326206513048
 
+
 def test_random_list():
     """
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
@@ -55,6 +58,7 @@ def test_random_list():
     l_random.sort()
     assert len(l_random) == 10
     assert l_random[0] < l_random[-1]
+
 
 def test_unique_elements():
     """
