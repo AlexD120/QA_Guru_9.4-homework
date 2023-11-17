@@ -24,12 +24,10 @@ def test_rectangle():
 
     # TODO сосчитайте периметр
     perimeter = 2 * (a + b)
-    print(f"Периметр = {perimeter}")
     assert perimeter == 60
 
     # TODO сосчитайте площадь
     area = a * b
-    print(f"Площадь = {area}")
     assert area == 200
 
 def test_circle():
@@ -45,7 +43,6 @@ def test_circle():
 
     # TODO сосчитайте длину окружности
     length = 2 * math.pi * r
-    print(f"Длина = {length}")
     assert length == 144.51326206513048
 
 def test_random_list():
@@ -54,9 +51,8 @@ def test_random_list():
     """
 
     # TODO создайте список
-    l_random = random.sample(range(1, 100), 10)
+    l_random = random.sample(range(1, 101), 10)
     l_random.sort()
-    print(f"Список = {l_random}")
     assert len(l_random) == 10
     assert l_random[0] < l_random[-1]
 
@@ -67,7 +63,6 @@ def test_unique_elements():
     l_unique_ = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
     # TODO удалите повторяющиеся элементы
     l_unique_ = list(set(l_unique_))
-    print(f"Список = {l_unique_}")
 
     assert isinstance(l_unique_, list)
     assert len(l_unique_) == 10
@@ -85,7 +80,7 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
-    print(f"Объединенный список = {d}")
+    print(f"Значения словаря = {d}")
 
     assert isinstance(d, dict)
     assert len(d) == 5
